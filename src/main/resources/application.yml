@@ -1,0 +1,9 @@
+application:
+  title: "An example Spring Boot app using Java"
+
+server:
+  compression:
+    enabled: true
+
+logging:
+  file: logs/springboot-java-example.log
