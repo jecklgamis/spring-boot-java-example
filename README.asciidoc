@@ -1,5 +1,5 @@
-SpringBoot Scala Example
-========================
+SpringBoot Java Example
+=======================
 Jerrico Gamis <jecklgamis@gmail.com>
 :Author Initials: JG
 :toc:
@@ -10,11 +10,10 @@ image:https://travis-ci.org/jecklgamis/springboot-java-example.svg?branch=master
 
 About
 -----
-This is an example SpringBoot app using Scala.
+This is an example SpringBoot app using Java.
 
 * Springboot 1.5.1.RELEASE
 * Jetty Web Server
-* Scala-2.12.1
 * Java 8
 * Maven 3
 
