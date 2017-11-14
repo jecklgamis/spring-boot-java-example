@@ -14,11 +14,10 @@ java -jar target/springboot-java-example.jar
 ## Running The App In Docker
 
 ```
-mvn clean package
+./mvnw clean package
 docker build -t springboot-java-example .
 docker run springboot-java-example
 ```
-
 
 ## Testing The Endpoint
 Point your browser to http://localhost:8080 or use `curl` in command line.
@@ -54,20 +53,6 @@ curl -v  -X PUT  -H "Content-Type:application/xml"  http://localhost:8080/user -
 
 ## Makefile
 A wrapper Makefile can save some keystrokes. `make dist image run` creates the jar, docker image, and runs the docker image
-
-.Makefile
-```
-default:
-	cat ./Makefile
-dist:
-	mvn clean package
-image:
-	docker build -t springboot-java-example:latest .
-run:
-	docker run -p 8080:8080 springboot-java-example:latest
-run-bash:
-	docker run -i -t springboot-java-example:latest /bin/bash
-```
 
 Have fun!
 
