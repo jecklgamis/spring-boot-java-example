@@ -1,6 +1,6 @@
-package com.jecklgamis.springboot.example.controller;
+package springboot.java.example.controller;
 
-import com.jecklgamis.springboot.example.api.User;
+import springboot.java.example.api.User;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,4 +1,4 @@
-package com.jecklgamis.springboot.example;
+package springboot.java.example;
 
 import com.fasterxml.jackson.datatype.joda.JodaModule;
 

@@ -1,4 +1,4 @@
-package com.jecklgamis.springboot.example.api;
+package springboot.java.example.api;
 
 public class User {
     private String username;
