@@ -4,6 +4,15 @@ application:
 server:
   compression:
     enabled: true
+  port: 8443
+  ssl:
+    key-store: classpath:keystore.jks
+    key-store-password: changeit
 
 logging:
   file: logs/springboot-java-example.log
+
+management:
+  security:
+    enabled: false
+
