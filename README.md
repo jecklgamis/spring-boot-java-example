@@ -15,7 +15,7 @@ Ensure you have Java 8 or later.
 java -jar target/springboot-java-example.jar
 ```
 
-## Building and Running Using Docker
+## Running The App Using Docker
 Ensure you have a working Docker environment.
 ```
 make dist image run
@@ -31,8 +31,5 @@ curl -v -k https://localhost:8443/
 Actuator endpoints:
 * `http://localhost:8080/actuator/metrics`
 * `http://localhost:8080/actuator/health`
-
-## Makefile
-
 
 
