@@ -25,3 +25,5 @@ management:
     metrics:
       enabled: true
     health:
+      enabled: true
+      show-details: always
