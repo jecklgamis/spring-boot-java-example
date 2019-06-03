@@ -2,6 +2,8 @@ application:
   title: "An example Spring Boot app using Java"
 
 server:
+  http:
+    port: 8080
   compression:
     enabled: true
   port: 8443
@@ -12,7 +14,14 @@ server:
 logging:
   file: logs/springboot-java-example.log
 
-management:
-  security:
-    enabled: false
 
+management:
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    metrics:
+      enabled: true
+    health:
