@@ -1,5 +1,6 @@
 application:
-  title: "An example Spring Boot app using Java"
+  name: "springboot-java-example"
+  description: "An example Spring Boot app using Java"
 
 server:
   http:
