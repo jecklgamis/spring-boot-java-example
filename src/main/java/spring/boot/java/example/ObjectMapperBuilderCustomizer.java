@@ -1,4 +1,4 @@
-package springboot.java.example;
+package spring.boot.java.example;
 
 import org.springframework.boot.autoconfigure.jackson.Jackson2ObjectMapperBuilderCustomizer;
 import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;

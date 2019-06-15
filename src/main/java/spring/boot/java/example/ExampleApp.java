@@ -1,4 +1,4 @@
-package springboot.java.example;
+package spring.boot.java.example;
 
 import org.eclipse.jetty.server.NetworkTrafficServerConnector;
 import org.springframework.beans.factory.annotation.Value;

@@ -1,5 +1,5 @@
 application:
-  name: "springboot-java-example"
+  name: "spring-boot-java-example"
   description: "An example Spring Boot app using Java"
 
 server:
@@ -13,7 +13,7 @@ server:
     key-store-password: changeit
 
 logging:
-  file: logs/springboot-java-example.log
+  file: logs/spring-boot-java-example.log
 
 
 management:

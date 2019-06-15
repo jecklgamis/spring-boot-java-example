@@ -1,8 +1,8 @@
-## SpringBoot Java Example
+## Spring Boot Java Example
 
-[![Build Status](https://travis-ci.org/jecklgamis/springboot-java-example.svg?branch=master)](https://travis-ci.org/jecklgamis/springboot-java-example)
+[![Build Status](https://travis-ci.org/jecklgamis/spring-boot-java-example.svg?branch=master)](https://travis-ci.org/jecklgamis/spring-boot-java-example)
 
-This is an example SpringBoot app using Java. 
+This is an example Spring Boot app using Java. 
 
 * Uses Jetty web container
 * Starts HTTP and HTTPs listener 
@@ -12,7 +12,7 @@ This is an example SpringBoot app using Java.
 Ensure you have Java 8 or later.
 ```
 ./mvnw clean package
-java -jar target/springboot-java-example.jar
+java -jar target/spring-boot-java-example.jar
 ```
 
 ## Running The App Using Docker
