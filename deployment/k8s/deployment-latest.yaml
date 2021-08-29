@@ -1,0 +1,42 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: "spring-boot-java-example"
+  labels:
+    app: "spring-boot-java-example"
+spec:
+  type: NodePort
+  ports:
+    - port: 80
+      protocol: TCP
+      targetPort: 8080
+      name: http
+    - port: 443
+      protocol: TCP
+      targetPort: 8443
+      name: https
+  selector:
+    app: "spring-boot-java-example"
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: "spring-boot-java-example"
+spec:
+  selector:
+    matchLabels:
+      app: "spring-boot-java-example"
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: "spring-boot-java-example"
+    spec:
+      containers:
+        - name: "spring-boot-java-example"
+          image: "jecklgamis/spring-boot-java-example:latest"
+          ports:
+            - containerPort: 8080
+            - containerPort: 8443

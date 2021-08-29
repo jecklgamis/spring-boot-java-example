@@ -9,12 +9,8 @@ server:
     enabled: true
   port: 8443
   ssl:
-    key-store: classpath:keystore.jks
+    key-store: classpath:keystore.pfx
     key-store-password: changeit
-
-logging:
-  file: logs/spring-boot-java-example.log
-
 
 management:
   endpoints:
@@ -28,3 +24,6 @@ management:
     health:
       enabled: true
       show-details: always
+logging:
+  file:
+    name: logs/spring-boot-java-example.log
