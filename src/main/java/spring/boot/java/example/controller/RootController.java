@@ -1,13 +1,11 @@
 package spring.boot.java.example.controller;
 
+import com.google.common.collect.ImmutableMap;
+import io.micrometer.core.annotation.Timed;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.google.common.collect.ImmutableMap;
-
-import io.micrometer.core.annotation.Timed;
-import java.time.LocalDateTime;
 import java.util.Map;
 
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
@@ -19,11 +17,10 @@ public class RootController {
 
     @RequestMapping(path = {"/"}, method = {GET}, produces = {"application/json"})
     @Timed
-    public Map root() {
+    public Map<Object, Object> root() {
         return ImmutableMap.builder()
                 .put("name", appName)
-                .put("java.version", System.getProperty("java.version"))
-                .put("now", LocalDateTime.now())
+                .put("message", "It works on my machine!")
                 .build();
     }
 }
