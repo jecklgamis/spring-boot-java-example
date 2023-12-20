@@ -10,7 +10,7 @@ This is an example Spring Boot app using Java.
 * Enables some actuator endpoints (health, metrics)
 
 ## Running The App
-Ensure you have Java 8 or later.
+Ensure you have Java 21 or later.
 ```
 ./mvnw clean package
 java -jar target/spring-boot-java-example.jar
