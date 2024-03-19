@@ -13,6 +13,8 @@ run-bash:
 	docker run -i -t $(IMAGE_NAME):$(IMAGE_TAG) /bin/bash
 keystore:
 	@./generate-keystore.sh
+build-info:
+	@./generate-build-info.sh
 chart:
 	cd deployment/k8s/helm && make package
 all: dist image chart

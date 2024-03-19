@@ -26,6 +26,8 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
       - name: Generate keystore
         run: ./generate-keystore.sh
+      - name: Generate build info
+        run: ./generate-build-info.sh
       - name: Build with Maven
         run: mvn --batch-mode --update-snapshots verify
       - name: Extract metadata (tags, labels) for Docker
