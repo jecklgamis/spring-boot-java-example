@@ -3,10 +3,9 @@
 [![Build](https://github.com/jecklgamis/spring-boot-java-example/actions/workflows/build.yml/badge.svg)](https://github.com/jecklgamis/spring-boot-java-example/actions/workflows/build.yml)
 
 
-This is an example Spring Boot app using Java. 
+This is an example Spring Boot app using Java.
 
 * Uses Jetty web container
-* Starts HTTP and HTTPs listener 
 * Enables some actuator endpoints (health, metrics)
 
 ## Running The App
@@ -27,7 +26,6 @@ Point your browser to `http://localhost:8080` or use `curl` in command line.
 
 ```
 curl -v  http://localhost:8080/
-curl -v -k https://localhost:8443/
 ```
 Actuator endpoints:
 * `http://localhost:8080/actuator/metrics`
