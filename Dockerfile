@@ -1,7 +1,7 @@
 FROM eclipse-temurin:25-jre
 LABEL maintainer="jecklgamis@gmail.com"
 
-ENV APP_HOME /app
+ENV APP_HOME=/app
 
 RUN groupadd -r app && useradd -r -gapp app
 RUN mkdir -m 0755 -p ${APP_HOME}/bin
