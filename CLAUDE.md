@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Spring Boot 3.4.5 example application using Java 21 and Jetty (not Tomcat). Provides a REST API with actuator endpoints for health/metrics.
+Spring Boot 4.0.3 example application using Java 25 and Jetty (not Tomcat). Provides a REST API with actuator endpoints for health/metrics.
 
 ## Build & Test Commands
 
@@ -32,7 +32,7 @@ Run a single test class:
 
 ## Key Details
 
-- Java 21 required (enforced by maven-enforcer-plugin)
+- Java 25 required (enforced by maven-enforcer-plugin)
 - Tomcat is explicitly excluded; Jetty is the embedded server
 - `build-info.json` is generated at build time by `generate-build-info.sh` (git branch, commit, timestamp)
 - Docker image: `jecklgamis/springboot-java-example:latest`, runs as non-root `app` user

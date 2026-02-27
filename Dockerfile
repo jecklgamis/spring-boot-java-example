@@ -1,7 +1,5 @@
-FROM ubuntu:22.04
-MAINTAINER Jerrico Gamis <jecklgamis@gmail.com>
-
-RUN apt update -y && apt install -y openjdk-21-jre-headless && rm -rf /var/lib/apt/lists/*
+FROM eclipse-temurin:25-jre
+LABEL maintainer="jecklgamis@gmail.com"
 
 ENV APP_HOME /app
 
@@ -21,4 +19,3 @@ EXPOSE 8443
 
 WORKDIR ${APP_HOME}
 CMD ["/docker-entrypoint.sh"]
-
