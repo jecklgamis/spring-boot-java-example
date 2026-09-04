@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Spring Boot 4.0.3 example application using Java 25 and Jetty (not Tomcat). Provides a REST API with actuator endpoints for health/metrics.
+Spring Boot 4.1.1 example application using Java 25 and Jetty (not Tomcat). Provides a REST API with actuator endpoints for health/metrics.
 
 ## Build & Test Commands
 

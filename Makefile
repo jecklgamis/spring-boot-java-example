@@ -3,7 +3,7 @@ IMAGE_TAG:=latest
 
 default:
 	cat ./Makefile
-dist: keystore
+dist: keystore build-info
 	./mvnw clean package
 image:
 	docker build -t $(IMAGE_NAME):$(IMAGE_TAG) .
