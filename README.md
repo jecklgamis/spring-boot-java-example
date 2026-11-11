@@ -31,4 +31,12 @@ Actuator endpoints:
 * `http://localhost:8080/actuator/metrics`
 * `http://localhost:8080/actuator/health`
 
+## Load Testing
 
+Load tests use [resonate](https://github.com/jecklgamis/resonate). With the app running:
+
+```bash
+brew install jecklgamis/tap/resonate
+./run-perf-tests.sh
+```
+See [perf-tests](perf-tests) for the scenarios and details.
